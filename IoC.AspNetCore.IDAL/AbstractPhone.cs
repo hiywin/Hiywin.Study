@@ -2,11 +2,13 @@
 
 namespace IoC.AspNetCore.IDAL
 {
-    public interface AbstractPhone
+    public abstract class AbstractPhone
     {
-        int ID { get; set; }
-        string Name { get; set; }
-        void Call();
-        void Text();
+        public int Id { get; set; }
+        public string Branch { get; set; }
+        // 打电话
+        public abstract void Call();
+        // 发短信
+        public abstract void Text();
     }
 }

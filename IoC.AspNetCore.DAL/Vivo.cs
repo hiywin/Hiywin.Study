@@ -7,17 +7,14 @@ namespace IoC.AspNetCore.DAL
 {
     public class Vivo : AbstractPhone
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-
-        public void Call()
+        public override void Call()
         {
-            Console.WriteLine("Call: " + Name);
+            Console.WriteLine("使用 {0} Call", this.GetType().Name);
         }
 
-        public void Text()
+        public override void Text()
         {
-            Console.WriteLine("Text: " + Name);
+            Console.WriteLine("使用 {0} Text", this.GetType().Name);
         }
     }
 }

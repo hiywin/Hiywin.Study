@@ -17,5 +17,13 @@ namespace IoC.AspNetCore.BLL
         {
             Console.WriteLine("Study");
         }
+
+        // 泛型定义
+        public void PlayGeneric<T>(T phone) where T : AbstractPhone
+        {
+            Console.WriteLine("用 {0}", phone.GetType().Name);
+            phone.Call();
+            phone.Text();
+        }
     }
 }
