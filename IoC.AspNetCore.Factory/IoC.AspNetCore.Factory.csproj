@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IoC.AspNetCore.IBLL\IoC.AspNetCore.IBLL.csproj" />
+    <ProjectReference Include="..\IoC.AspNetCore.Interface\IoC.AspNetCore.Interface.csproj" />
   </ItemGroup>
 
 </Project>

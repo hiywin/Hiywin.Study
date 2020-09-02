@@ -1,5 +1,6 @@
 ﻿using IoC.AspNetCore.IBLL;
 using IoC.AspNetCore.IDAL;
+using IoC.AspNetCore.Interface;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Reflection;
@@ -13,6 +14,9 @@ namespace IoC.AspNetCore.Factory
 
         private static string AbstractPhoneAssembly =
             CustomConfigManager.GetConfig("AbstractPhoneAssembly");
+
+        private static string PhoneAssembly =
+            CustomConfigManager.GetConfig("PhoneAssembly");
 
         public static IStudentService CreateStudenService()
         {
@@ -32,6 +36,13 @@ namespace IoC.AspNetCore.Factory
             Assembly assembly = Assembly.LoadFrom(AbstractPhoneAssembly.Split(',')[1]);
             Type type = assembly.GetType(AbstractPhoneAssembly.Split(',')[0]);
             return (AbstractPhone)Activator.CreateInstance(type);
+        }
+
+        public static IPhone CreatePhone()
+        {
+            Assembly assembly = Assembly.LoadFrom(PhoneAssembly.Split(',')[1]);
+            Type type = assembly.GetType(PhoneAssembly.Split(',')[0]);
+            return (IPhone)Activator.CreateInstance(type);
         }
     }
 

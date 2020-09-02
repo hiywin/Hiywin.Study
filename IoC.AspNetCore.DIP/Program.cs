@@ -2,6 +2,7 @@
 using IoC.AspNetCore.Factory;
 using IoC.AspNetCore.IBLL;
 using IoC.AspNetCore.IDAL;
+using IoC.AspNetCore.Interface;
 using System;
 
 namespace IoC.AspNetCore.DIP
@@ -11,10 +12,22 @@ namespace IoC.AspNetCore.DIP
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            DIP();
+            
+            Test();
 
             Console.Read();
+        }
+
+        static void Test()
+        {
+            Console.WriteLine("请输入：");
+            var r = Console.ReadLine();
+            if (r == "1")
+            {
+                DIP();
+
+                Test();
+            }
         }
 
         // 依赖倒置写法
@@ -36,6 +49,10 @@ namespace IoC.AspNetCore.DIP
                 AbstractPhone phone = SimpleFactory.CreateAbstractPhone();
                 service.PlayAbstractPhone(phone);
 
+            }
+            {    //使用反射
+                IPhone phone = SimpleFactory.CreatePhone();
+                phone.Call();
             }
 
         } 
