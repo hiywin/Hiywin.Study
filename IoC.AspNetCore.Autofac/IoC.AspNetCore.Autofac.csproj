@@ -6,14 +6,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="hiebi3rf.qs4~" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="Autofac.Configuration" Version="5.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.7" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.7" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.7" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IoC.AspNetCore.Common\IoC.AspNetCore.Common.csproj" />
     <ProjectReference Include="..\IoC.AspNetCore.Interface\IoC.AspNetCore.Interface.csproj" />
     <ProjectReference Include="..\IoC.AspNetCore.Services\IoC.AspNetCore.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Autofac.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

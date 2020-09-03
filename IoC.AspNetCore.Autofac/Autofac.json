@@ -1,0 +1,54 @@
+{
+  "components": [
+    {
+      "type": "IoC.AspNetCore.Services.AndroidPhone,IoC.AspNetCore.Services",
+      "services": [
+        {
+          "type": "IoC.AspNetCore.Interface.IPhone,IoC.AspNetCore.Interface"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": false
+    },
+    {
+      "type": "IoC.AspNetCore.Services.ApplePhone,IoC.AspNetCore.Services",
+      "services": [
+        {
+          "type": "IoC.AspNetCore.Interface.IPhone,IoC.AspNetCore.Interface"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": false
+    },
+    {
+      "type": "IoC.AspNetCore.Services.HeadPhone,IoC.AspNetCore.Services",
+      "services": [
+        {
+          "type": "IoC.AspNetCore.Interface.IHeadphone,IoC.AspNetCore.Interface"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": false
+    },
+    {
+      "type": "IoC.AspNetCore.Services.Microphone,IoC.AspNetCore.Services",
+      "services": [
+        {
+          "type": "IoC.AspNetCore.Interface.IMicrophone,IoC.AspNetCore.Interface"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": false
+    },
+    {
+      "type": "IoC.AspNetCore.Services.Power,IoC.AspNetCore.Services",
+      "services": [
+        {
+          "type": "IoC.AspNetCore.Interface.IPower,IoC.AspNetCore.Interface"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": false
+    }
+  ]
+}

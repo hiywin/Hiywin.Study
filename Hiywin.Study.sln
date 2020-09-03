@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC.AspNetCore.Factory", "I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-IoC-2-Autofac", "1-IoC-2-Autofac", "{B8438CAC-289D-49CE-B61D-BD0E3F838467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.AspNetCore.Autofac", "IoC.AspNetCore.Autofac\IoC.AspNetCore.Autofac.csproj", "{A6CD0318-A9FA-49C1-B0F2-A830756B08D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC.AspNetCore.Autofac", "IoC.AspNetCore.Autofac\IoC.AspNetCore.Autofac.csproj", "{A6CD0318-A9FA-49C1-B0F2-A830756B08D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.AspNetCore.Interface", "IoC.AspNetCore.Interface\IoC.AspNetCore.Interface.csproj", "{E1DA467D-9F8D-4B4F-A61D-39DCB623C28F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC.AspNetCore.Interface", "IoC.AspNetCore.Interface\IoC.AspNetCore.Interface.csproj", "{E1DA467D-9F8D-4B4F-A61D-39DCB623C28F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.AspNetCore.Services", "IoC.AspNetCore.Services\IoC.AspNetCore.Services.csproj", "{49E0E862-3EC0-4461-911F-DAE5FE3736D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC.AspNetCore.Services", "IoC.AspNetCore.Services\IoC.AspNetCore.Services.csproj", "{49E0E862-3EC0-4461-911F-DAE5FE3736D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.AspNetCore.Common", "IoC.AspNetCore.Common\IoC.AspNetCore.Common.csproj", "{8F9CD434-96D6-4B06-86F9-F49949E031FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{49E0E862-3EC0-4461-911F-DAE5FE3736D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49E0E862-3EC0-4461-911F-DAE5FE3736D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49E0E862-3EC0-4461-911F-DAE5FE3736D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F9CD434-96D6-4B06-86F9-F49949E031FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9CD434-96D6-4B06-86F9-F49949E031FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9CD434-96D6-4B06-86F9-F49949E031FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9CD434-96D6-4B06-86F9-F49949E031FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{A6CD0318-A9FA-49C1-B0F2-A830756B08D9} = {B8438CAC-289D-49CE-B61D-BD0E3F838467}
 		{E1DA467D-9F8D-4B4F-A61D-39DCB623C28F} = {B8438CAC-289D-49CE-B61D-BD0E3F838467}
 		{49E0E862-3EC0-4461-911F-DAE5FE3736D0} = {B8438CAC-289D-49CE-B61D-BD0E3F838467}
+		{8F9CD434-96D6-4B06-86F9-F49949E031FF} = {B8438CAC-289D-49CE-B61D-BD0E3F838467}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FBD1B3E-ADED-425E-B686-E4A2B1DA6283}
